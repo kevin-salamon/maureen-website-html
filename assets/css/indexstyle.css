@@ -1,0 +1,232 @@
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+      ), url("../images/wideprof.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background {
+    width: 100%;
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    padding: 1.5%;
+    background-color: #2D0406;
+    border-bottom: 1px solid #44151E;
+}
+
+.navtab {
+    margin-left: 5%;
+    color: white;
+    align-self: center;
+    font-family: 'Lusitana', serif;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+.navtab:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.header-main {
+    align-self: center;
+    color: white;
+}
+
+.header-button {
+    font-family: 'Lusitana', serif;
+    letter-spacing: 0.0625em;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    padding: 5px;
+    font-size: 2.1em;
+}
+
+.header-main:hover {
+    color: white;
+}
+
+.text-area {
+    width: 55%;
+    padding: 1%;
+    margin: 6%;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.intro-text {
+    height: 20%;
+    font-size: 1.75rem;
+    margin-bottom: 5%;
+}
+
+.intro-title {
+    font-family: 'Lusitana', serif;
+    font-size: 2.3em;
+    letter-spacing: 0.025em;
+}
+
+.intro-description {
+    font-family: 'Lusitana', serif;
+    font-size: 0.7em;
+    text-decoration: underline;
+}
+
+.icon-holder {
+    margin-top: 30px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30%;
+    margin-right: 2%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #586F7C;
+    color: white; 
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.description-text {
+    height: 80%;
+    font-size: 1.5em;
+    font-family: 'Lusitana', serif;
+    font-weight: 590;
+}
+
+.contact-text {
+    font-size: 1.4em;
+    font-family: 'Lusitana', serif;
+    font-weight: 500;
+}
+
+.pop-out {
+    font-family: 'Lusitana', serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 0.075em;
+}
+
+.pop-out:hover {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.image-holder {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+.headshot {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 520px) {
+    .header-nav {
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 10%;
+    }
+
+    .header-button {
+        font-size: 1.5em;
+    }
+
+    .navtab {
+        margin-left: 0%;
+        font-size: 1em;
+        letter-spacing: 0.05em;
+    }
+
+    .text-area {
+        border: 5px solid white;
+        padding: 5%;
+    }
+
+    .intro-description {
+        font-size: 0.6em;
+    }
+
+    .description-text {
+        font-size: 1.3em;
+     }
+
+     .contact-text {
+         font-size: 1.1em;
+     }
+
+     .pop-out {
+        border-bottom: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .header-button {
+        border: transparent;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .intro-text {
+        text-align: center;
+    }
+
+    .text-area {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .background {
+        display: flex;
+        justify-content: center;
+    }
+
+    .description-text {
+       text-align: center;
+       margin-top: 40px;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+
+    .icon-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+

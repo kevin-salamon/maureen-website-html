@@ -1,0 +1,162 @@
+.body {
+    background-color: white;
+    height: 100%;
+}
+
+.header-nav {
+    box-shadow: 2px black;
+    width: 100%;
+    display: flex;
+    padding: 1.5%;
+    background-color: #2D0406;
+}
+
+.navtab {
+    margin-left: 5%;
+    color: white;
+    align-self: center;
+    font-family: 'Lusitana', serif;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+.navtab:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.header-main {
+    align-self: center;
+    color: white;
+}
+
+.header-button {
+    font-family: 'Lusitana', serif;
+    letter-spacing: 0.0625em;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    padding: 5px;
+    font-size: 2.1em;
+}
+
+.header-main:hover {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-size: cover;
+    background-color: white;
+    margin: 3.5% 0%;
+    border-top: 2px solid #E1D9CF;
+    border-bottom: 2px solid #E1D9CF;
+}
+
+.image-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 2%;
+    background-color: #F0ECE2;
+}
+
+.headshot {
+    border-radius: 5px;
+    width: auto;
+    height: 600px;
+}
+
+.text-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 2%;
+} 
+
+.text-slot p {
+    font-size: 1.2em;
+    font-family: 'Lusitana', serif;
+}
+
+@media screen and (max-width: 520px) {
+    .header-nav {
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 10%;
+      }
+
+      .header-button {
+        font-size: 1.5em;
+    }
+
+    .navtab {
+        margin-left: 0%;
+        font-size: 1em;
+        letter-spacing: 0.05em;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .header-button {
+        border: transparent;
+    }
+}
+
+@media screen and (max-width: 1635px) and (min-width: 1280px) {
+    .text-slot p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1075px) {
+    .text-slot p {
+        font-size: 1.0em;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .image-slot {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+    .flex-container {
+        flex-wrap: wrap;
+        border-top: 2px solid #E1D9CF;
+    }
+
+    .image-slot {
+        width: 100%;
+        border-bottom: 2px solid #E1D9CF;
+    }
+
+    .text-slot {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .headshot {
+        height: 400px;
+        width: 265px;
+        border-radius: 0px;
+    }
+
+    .text-slot p {
+        font-size: 0.9em;
+        padding: 3px;
+    }
+
+    .flex-container {
+        /* margin-top: 0%; */
+    }
+}
